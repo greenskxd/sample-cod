@@ -1,0 +1,250 @@
+
+
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #333333;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #d35400;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+    background-color: #333333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #d35400;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* SECCIONES */
+section {
+    margin-bottom: 45px;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #d35400;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* CONTENEDOR DE LAS TARJETAS */
+.contenedor-recetas {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* TARJETAS DE LAS RECETAS */
+.receta {
+    width: 280px;
+    max-width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* IMÁGENES DE LA PÁGINA PRINCIPAL */
+.receta img {
+    width: 160px;
+    height: 160px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* TÍTULOS DE LAS RECETAS */
+.receta h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.receta h3 a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.receta h3 a:hover {
+    color: #d35400;
+}
+
+/* DESCRIPCIÓN DE LAS RECETAS */
+.receta p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #d35400;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.boton:hover {
+    background-color: #a04000;
+}
+
+/* PÁGINAS INDIVIDUALES DE LAS RECETAS */
+.detalle-receta {
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGEN DE CADA RECETA */
+.detalle-receta img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 280px;
+    object-fit: cover;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+}
+
+/* TÍTULOS DE LAS RECETAS INDIVIDUALES */
+.detalle-receta h2 {
+    color: #d35400;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* LISTAS DE INGREDIENTES Y PREPARACIÓN */
+.detalle-receta ul,
+.detalle-receta ol {
+    padding-left: 25px;
+}
+
+.detalle-receta li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* DISEÑO PARA MÓVILES */
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .receta {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .receta img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .detalle-receta {
+        padding: 18px;
+    }
+
+    .detalle-receta img {
+        height: 220px;
+    }
+}
