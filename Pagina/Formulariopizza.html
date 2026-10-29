@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        fieldset {
+            border: 1px solid #777;
+            padding: 15px;
+            margin-bottom: 15px;
+            max-width: 450px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 5px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .option-group {
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        .option-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            margin-bottom: 8px;
+        }
+
+        .input-group label {
+            display: inline-block;
+            width: 160px;
+            vertical-align: top;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="tel"] {
+            width: 180px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 180px;
+            margin-top: 5px;
+            resize: vertical;
+        }
+
+        select {
+            padding: 2px 5px;
+        }
+
+        .submit-btn {
+            margin-top: 10px;
+            padding: 2px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Pedido de pizza</h2>
+
+    <form action="#" method="post">
+        <!-- Sección: La pizza -->
+        <fieldset>
+            <legend>La pizza</legend>
+
+            <div class="section-title">Ingredientes</div>
+            <div class="option-group">
+                <label><input type="checkbox" name="ingredientes" value="queso"> Queso</label>
+                <label><input type="checkbox" name="ingredientes" value="pimiento"> Pimiento</label>
+                <label><input type="checkbox" name="ingredientes" value="cebolla"> Cebolla</label>
+            </div>
+
+            <div class="section-title">Tamaño</div>
+            <div class="option-group">
+                <label><input type="radio" name="tamano" value="pequena"> Pequeña</label>
+                <label><input type="radio" name="tamano" value="mediana"> Mediana</label>
+                <label><input type="radio" name="tamano" value="grande"> Grande</label>
+            </div>
+        </fieldset>
+
+        <!-- Sección: Datos de entrega -->
+        <fieldset>
+            <legend>Datos de entrega</legend>
+
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+
+            <div class="input-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+
+            <div class="input-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div class="input-group" style="margin-top: 10px;">
+                <label for="instrucciones">Instrucciones especiales</label><br>
+                <textarea id="instrucciones" name="instrucciones"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Sección: Método de pago -->
+        <fieldset>
+            <legend>Método de pago</legend>
+
+            <select name="metodo_pago">
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+            </select>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Ok</button>
+    </form>
+
+</body>
+</html>
