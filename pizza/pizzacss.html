@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptes de cuina casolanes</title>
+    
+    <!-- Enlace correcto al archivo CSS llamado pizza.css -->
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+
+    <!-- Cabecera de la página -->
+    <header>
+        <h1>Receptes de cuina casolanes</h1>
+        
+        <!-- Menú de navegación -->
+        <nav>
+            <a href="#">Postres</a>
+            <a href="#">Tapes</a>
+            <a href="#">Vegetarians</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Tarjeta de receta 1 -->
+        <article class="tarjeta-receta">
+            <h2>Spaghetis amatriciana</h2>
+            <p>El plat típic de la zona de Puglia a Itàlia</p>
+        </article>
+
+        <!-- Tarjeta de receta 2 -->
+        <article class="tarjeta-receta">
+            <h2>Canolli de Sicilia</h2>
+            <p>El postre més popular de sicilia</p>
+        </article>
+
+        <!-- Tarjeta de receta 3 -->
+        <article class="tarjeta-receta">
+            <h2>Títol artículo 3</h2>
+            <p>energia solar a Europa</p>
+        </article>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Jaume © 2026</p>
+    </footer>
+<form action="#" method="post">
+        <!-- Sección: La pizza -->
+        <fieldset>
+            <legend>La pizza</legend>
+
+            <div class="section-title">Ingredientes</div>
+            <div class="option-group">
+                <label><input type="checkbox" name="ingredientes" value="queso"> Queso</label>
+                <label><input type="checkbox" name="ingredientes" value="pimiento"> Pimiento</label>
+                <label><input type="checkbox" name="ingredientes" value="cebolla"> Cebolla</label>
+            </div>
+
+            <div class="section-title">Tamaño</div>
+            <div class="option-group">
+                <label><input type="radio" name="tamano" value="pequena"> Pequeña</label>
+                <label><input type="radio" name="tamano" value="mediana"> Mediana</label>
+                <label><input type="radio" name="tamano" value="grande"> Grande</label>
+            </div>
+        </fieldset>
+
+        <!-- Sección: Datos de entrega -->
+        <fieldset>
+            <legend>Datos de entrega</legend>
+
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+
+            <div class="input-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+
+            <div class="input-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div class="input-group" style="margin-top: 10px;">
+                <label for="instrucciones">Instrucciones especiales</label><br>
+                <textarea id="instrucciones" name="instrucciones"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Sección: Método de pago -->
+        <fieldset>
+            <legend>Método de pago</legend>
+
+            <select name="metodo_pago">
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+            </select>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Ok</button>
+    </form>
+</body>
+</html>
